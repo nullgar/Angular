@@ -38,7 +38,7 @@
                 <tbody>
                     <tr *ngFor="let product of products">
                         <td>
-                            <img *ngIf='showImage' [src]='product.imageUrl' [title]="product.titles | uppercase"
+                            <img *ngIf='showImage' [src]='product.imageUrl' [title]="product.description | uppercase"
                             [style.width.px]="imageWidth" [style.margin.px]="imageMargin"
                             >
                         </td>

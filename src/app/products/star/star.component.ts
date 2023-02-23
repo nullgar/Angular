@@ -17,6 +17,7 @@ export class StarComponent implements OnChanges {
 
 
     ngOnChanges(): void {
+        console.log(this.cropWidth = this.rating * 75/5)
         this.cropWidth = this.rating * 75/5;
     }
 

@@ -87,11 +87,14 @@ export class ProductListComponent implements OnInit {
     )};
 
     toggleImage() {
-        this.showImage = !this.showImage
+        this.showImage = !this.showImage;
     };
 
     ngOnInit(): void {
-        this.listFilter = ""
-
+      this.listFilter = "";
     };
+
+    onRatingClicked(message: string): void {
+      this.pageTitle = `Product List: ${message}`;
+    }
 }
